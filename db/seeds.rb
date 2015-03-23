@@ -52,7 +52,7 @@ puts 'Seeding the database...'
   email_system: 'system@catarse.me',
   email_no_reply: 'no-reply@catarse.me',
   facebook_url: "http://facebook.com/catarse.me",
-  facebook_app_id: '173747042661491',
+  facebook_app_id: '192596204249125',
   twitter_url: 'http://twitter.com/catarse',
   twitter_username: "catarse",
   mailchimp_url: "http://catarse.us5.list-manage.com/subscribe/post?u=ebfcd0d16dbb0001a0bea3639&amp;id=149c39709e",
@@ -78,8 +78,8 @@ puts 'Seeding the database...'
 end
 
 OauthProvider.find_or_create_by!(name: 'facebook') do |o|
-  o.key = 'your_facebook_app_key'
-  o.secret = 'your_facebook_app_secret'
+  o.key = '192596204249125'
+  o.secret = 'd8b4a9c6a4514e032c29e4bd25a393a5'
   o.path = 'facebook'
 end
 
