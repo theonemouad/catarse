@@ -81,6 +81,12 @@ OauthProvider.find_or_create_by!(name: 'facebook') do |o|
   o.key = '192596204249125'
   o.secret = 'd8b4a9c6a4514e032c29e4bd25a393a5'
   o.path = 'facebook'
+
+OauthProvider.create :name => 'Twitter', :key => 'myconsumerkey', :secret => 'myconsumersecret', :strategy => 'Twitter', :path => 'twitter'
+OauthProvider.create :name => 'LinkedIn', :key => 'myconsumerkey', :secret => 'myconsumersecret', :strategy => 'LinkedIn', :path => 'linked_in'
+
+###  
+  
 end
 
 puts
